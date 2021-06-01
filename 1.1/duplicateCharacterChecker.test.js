@@ -7,9 +7,7 @@ describe("duplicateCharacterChecker", () => {
     );
   });
   it('should return true for "!abcd!"', () => {
-    expect(duplicateCharacterChecker("abcdefghijklmnopqrstuvqxyza")).toEqual(
-      true
-    );
+    expect(duplicateCharacterChecker("!abcd!")).toEqual(true);
   });
   it('should return false for "asd"', () => {
     expect(duplicateCharacterChecker("asd")).toEqual(false);
