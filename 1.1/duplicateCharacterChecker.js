@@ -1,7 +1,5 @@
 // Check for duplicates in a string
 
-const duplicateCharacterChecker = (stringToCheck) => {
+const duplicateCharacterChecker = (stringToCheck) => {};
 
-};
-
-module.exports = { duplicateCharacterChecker }; 
+module.exports = { duplicateCharacterChecker };

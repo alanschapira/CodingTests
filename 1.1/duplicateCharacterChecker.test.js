@@ -2,9 +2,7 @@ const { duplicateCharacterChecker } = require("./duplicateCharacterChecker");
 
 describe("duplicateCharacterChecker", () => {
   it('should return true for "abcdefghijklmnopqrstuvqxyza"', () => {
-    expect(duplicateCharacterChecker("abcdefghijklmnopqrstuvqxyza")).toEqual(
-      true
-    );
+    expect(duplicateCharacterChecker("abcdefghijklmnopqrstuvqxyza")).toEqual(true);
   });
   it('should return true for "!abcd!"', () => {
     expect(duplicateCharacterChecker("!abcd!")).toEqual(true);
