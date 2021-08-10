@@ -41,6 +41,6 @@ describe('mastermind', () => {
     const guess = [6, 1, 5, 1];
     const answer = [1, 2, 4, 3];
     const result = mastermind(guess, answer);
-    expect(result).toEqual({ correctNumberCorrectPlace: 1, correctNumberIncorrectPlace: 0 });
+    expect(result).toEqual({ correctNumberCorrectPlace: 0, correctNumberIncorrectPlace: 1 });
   });
 });
