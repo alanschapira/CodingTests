@@ -1,4 +1,4 @@
-const { mastermind } = require("./mastermind");
+const { mastermind } = require('./mastermind');
 
 describe('mastermind', () => {
   it('should show the correct response when they are all wrong', () => {
@@ -37,9 +37,15 @@ describe('mastermind', () => {
     const result = mastermind(guess, answer);
     expect(result).toEqual({ correctNumberCorrectPlace: 1, correctNumberIncorrectPlace: 0 });
   });
-  it('should ignore duplicates in the wrong place', () => {
+  it('should ignore duplicates in the answer', () => {
     const guess = [6, 1, 5, 1];
     const answer = [1, 2, 4, 3];
+    const result = mastermind(guess, answer);
+    expect(result).toEqual({ correctNumberCorrectPlace: 0, correctNumberIncorrectPlace: 1 });
+  });
+  it('should ignore duplicates in the guess', () => {
+    const guess = [1, 2, 4, 3];
+    const answer = [6, 1, 5, 1];
     const result = mastermind(guess, answer);
     expect(result).toEqual({ correctNumberCorrectPlace: 0, correctNumberIncorrectPlace: 1 });
   });
